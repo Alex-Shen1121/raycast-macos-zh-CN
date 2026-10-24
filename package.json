@@ -1,0 +1,11 @@
+{
+  "name": "raycast-macos-zh-cn",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs"
+  },
+  "devDependencies": {
+    "acorn": "8.19.0"
+  }
+}

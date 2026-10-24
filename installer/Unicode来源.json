@@ -1,0 +1,27 @@
+{
+  "revision": "1aaabe99aa652d6f22ea488cf25baea46aa69b42",
+  "retrievedAt": "2026-09-17T00:22:17.331795+00:00",
+  "sources": [
+    {
+      "file": "en-annotations.json",
+      "url": "https://raw.githubusercontent.com/unicode-org/cldr-json/1aaabe99aa652d6f22ea488cf25baea46aa69b42/cldr-json/cldr-annotations-full/annotations/en/annotations.json",
+      "sha256": "f22083cb86dffb63a643d5bacb5d9899f82d2fa5d388ad4f3aed72184acef505"
+    },
+    {
+      "file": "zh-annotations.json",
+      "url": "https://raw.githubusercontent.com/unicode-org/cldr-json/1aaabe99aa652d6f22ea488cf25baea46aa69b42/cldr-json/cldr-annotations-full/annotations/zh/annotations.json",
+      "sha256": "8d2dfe9bf41894bd17c9c1a1906a31bf0ccc06204bf4b77c2ab2b0d8f79a5fdf"
+    },
+    {
+      "file": "en-annotationsDerived.json",
+      "url": "https://raw.githubusercontent.com/unicode-org/cldr-json/1aaabe99aa652d6f22ea488cf25baea46aa69b42/cldr-json/cldr-annotations-derived-full/annotationsDerived/en/annotations.json",
+      "sha256": "15c9457afa703a32dcc78d54626418a91e820fe0ddd67b7d491c4c4d9f5846ab"
+    },
+    {
+      "file": "zh-annotationsDerived.json",
+      "url": "https://raw.githubusercontent.com/unicode-org/cldr-json/1aaabe99aa652d6f22ea488cf25baea46aa69b42/cldr-json/cldr-annotations-derived-full/annotationsDerived/zh/annotations.json",
+      "sha256": "1ff96249af6fc69067f2dfabc26b450786a93d8048f2764ecfad53fd64953f92"
+    }
+  ],
+  "licenseUrl": "https://raw.githubusercontent.com/unicode-org/cldr-json/1aaabe99aa652d6f22ea488cf25baea46aa69b42/LICENSE"
+}
