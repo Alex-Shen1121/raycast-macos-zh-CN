@@ -1,0 +1,100 @@
+{
+  "revision": "r2",
+  "version": "2.9.0.0",
+  "reviewDate": "2026-10-25",
+  "baselineCommit": "a96af5bf2ffde16e52fe65ea197d5486b5d8e834",
+  "counts": {
+    "entries": 18248,
+    "occurrences": 28841,
+    "emoji": 4339,
+    "retained": 17082,
+    "changed": 1007,
+    "contextual": 159
+  },
+  "excluded": [
+    {
+      "id": "79930fe02713aad6",
+      "reason": "Acorn Unicode 标识符字符集属于程序数据，不是人类译文"
+    }
+  ],
+  "scopedExtensions": 49,
+  "scopedEntries": 137,
+  "extraDisplayFixes": [
+    {
+      "resource": "Contents/Resources/macos-app_RaycastDesktopApp.bundle/Contents/Resources/frontend/window-shell-hosts-CNPE0cCf.js",
+      "start": 129229,
+      "end": 129237,
+      "before": "Desktop ",
+      "after": "桌面 ",
+      "reason": "Ol 仅被 VirtualDesktopView 的显示标题和 DesktopCard 的显示名称/无障碍标签调用。只翻译缺省模板的静态文字，e.name 的空值合并判断、桌面序号和实际切换/关闭参数不变，自定义名称（包括空字符串）原样保留。",
+      "sourceId": "bd318e5c07bec512"
+    },
+    {
+      "resource": "Contents/Resources/macos-app_RaycastDesktopApp.bundle/Contents/Resources/frontend/main-window-D93los-u.js",
+      "start": 1197892,
+      "end": 1197896,
+      "before": "null",
+      "after": "``",
+      "reason": "仅将 Grid 标题条件表达式的假分支由 null 改为空字符串，避免模板输出字面量 null；r 条件、选中分支、分隔符和 r.title 全部保持不变。",
+      "sourceId": "ea816800d7ff1139"
+    },
+    {
+      "resource": "Contents/Resources/macos-app_RaycastDesktopApp.bundle/Contents/Resources/frontend/main-window-D93los-u.js",
+      "start": 1240983,
+      "end": 1241203,
+      "before": "function Afe(e){if(!e)return`—`;let t=new Date(e),n=new Date().getTime()-t.getTime(),r=Math.floor(n/1e3),i=Math.floor(r/60),a=Math.floor(i/60);return r<60?`${r}s ago`:i<60?`${i}m ago`:a<24?`${a}h ago`:t.toLocaleString()}",
+      "after": "function Afe(e){if(!e)return`—`;let t=new Date(e),n=new Date().getTime()-t.getTime(),r=Math.floor(n/1e3),i=Math.floor(r/60),a=Math.floor(i/60);return r<60?`${r} 秒前`:i<60?`${i} 分钟前`:a<24?`${a} 小时前`:t.toLocaleString()}",
+      "reason": "Afe 仅用于任务调度器上次运行时间的显示；只本地化三个相对时间模板。时间戳读取、差值计算、向下取整、60 秒/60 分钟/24 小时分界和 toLocaleString 回退不变。",
+      "sourceId": "80290f71e7463292"
+    },
+    {
+      "resource": "Contents/Resources/macos-app_RaycastDesktopApp.bundle/Contents/Resources/frontend/main-window-D93los-u.js",
+      "start": 1241203,
+      "end": 1241446,
+      "before": "function jfe(e){if(!e)return`—`;let t=new Date(e),n=new Date,r=t.getTime()-n.getTime();if(r<0)return`Soon`;let i=Math.floor(r/1e3),a=Math.floor(i/60),o=Math.floor(a/60);return i<60?`in ${i}s`:a<60?`in ${a}m`:o<24?`in ${o}h`:t.toLocaleString()}",
+      "after": "function jfe(e){if(!e)return`—`;let t=new Date(e),n=new Date,r=t.getTime()-n.getTime();if(r<0)return`即将`;let i=Math.floor(r/1e3),a=Math.floor(i/60),o=Math.floor(a/60);return i<60?`${i} 秒后`:a<60?`${a} 分钟后`:o<24?`${o} 小时后`:t.toLocaleString()}",
+      "reason": "jfe 仅用于任务调度器下次运行时间的显示；只翻译 Soon 和三个时间模板。已到期判断、秒/分/时数值、分界与日期回退不变，不修改真实执行计划。",
+      "sourceId": "5b41b7ce88517ce2"
+    },
+    {
+      "resource": "Contents/Resources/macos-app_RaycastDesktopApp.bundle/Contents/Resources/frontend/main-window-D93los-u.js",
+      "start": 1357743,
+      "end": 1357748,
+      "before": "eo(e)",
+      "after": "(t=>t===`now`?`刚刚`:t)(eo(e))",
+      "reason": "仅在“刷新于”相邻的显示表达式中将严格相等的字符串 now 映射为刚刚。eo(e) 只求值一次；其他字符串、数字和原类型直接返回，不更改共享格式化函数或原始时间戳。",
+      "sourceId": "3c3bf1f4a96565dc"
+    },
+    {
+      "resource": "Contents/Resources/macos-app_RaycastDesktopApp.bundle/Contents/Resources/frontend/main-window-D93los-u.js",
+      "start": 806020,
+      "end": 806036,
+      "before": "`the active app`",
+      "after": "\"当前应用\"",
+      "reason": "只翻译应用名缺失时的提示；真实应用名称保持原样。",
+      "sourceId": "15bec108566ec950"
+    }
+  ],
+  "extensionSourceRevision": "1a0ef1d91a7d2b1ce55ee8cd2323d98bcfb1f5ac",
+  "cldrRevision": "1aaabe99aa652d6f22ea488cf25baea46aa69b42",
+  "sourceHashes": {
+    "helpers/store.js": "6e26b8b1db320a21c4ab6dfbd27aea16fc8724ef7b71345dc95d82494d57bdd4",
+    "helpers/extension-api.js": "1be0ab3597cfabc2c96141779958b2cd02942d32fa44acd1a18d269bedfff549",
+    "helpers/main-window.js": "14ac454070939c7976558c6e858fa5eacba2aae1e61e0e4d11b09e5c4bd502c8",
+    "translations/2.9.0.0.json": "8b728e11a2b632157f9b0e28f5f0ab88a431b1e898b9df1a7e26d438c28e94a4",
+    "translations/2.9-new-strings.json": "d72664d5baaa3b570839f335cd3e1bc7e093edbef6ac16bee1b3e6775495c6bf"
+  },
+  "limitations": [
+    "覆盖当前补丁已有译文及此次修订涉及的显示文字，不代表 Raycast 全部原始英文已汉化。",
+    "没有逐个登录并运行 100 个商店扩展及 Mole 的所有流程；实机抽样见验证报告。",
+    "未验证 Intel Mac 或其他机器启动；资源修改使完整官方签名失效，保留恢复工具。"
+  ],
+  "coverageChecks": {
+    "missing": 0,
+    "duplicate": 0,
+    "scopedConflicts": 0,
+    "unresolved": 0,
+    "syntaxErrors": 0,
+    "formatDifferenceCandidatesReviewed": 27
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "checkedAt": "2026-10-24T19:33:28.116Z",
+  "scope": "在完整官方原版副本上测试安装、保护措施和还原；不代表其他机器的 Gatekeeper 启动验证。",
+  "passed": true,
+  "restoredOfficialSignature": true,
+  "checks": [
+    {
+      "operation": "--check",
+      "expectedExit": 0,
+      "actualExit": 0,
+      "message": "检查通过"
+    },
+    {
+      "operation": "--apply",
+      "expectedExit": 1,
+      "actualExit": 1,
+      "message": "版本不匹配"
+    },
+    {
+      "operation": "--apply",
+      "expectedExit": 1,
+      "actualExit": 1,
+      "message": "原版资源不匹配"
+    },
+    {
+      "operation": "--apply",
+      "expectedExit": 1,
+      "actualExit": 1,
+      "message": "补丁文件校验失败"
+    },
+    {
+      "operation": "--apply",
+      "expectedExit": 1,
+      "actualExit": 1,
+      "message": "补丁清单格式或路径无效"
+    },
+    {
+      "operation": "--apply",
+      "expectedExit": 1,
+      "actualExit": 1,
+      "message": "符号链接"
+    },
+    {
+      "operation": "--interactive-apply",
+      "expectedExit": 0,
+      "actualExit": 0,
+      "message": "已取消，未修改应用"
+    },
+    {
+      "operation": "--apply",
+      "expectedExit": 0,
+      "actualExit": 0,
+      "message": "全部目标文件校验通过"
+    },
+    {
+      "operation": "逐文件与原生程序指纹检查",
+      "resourceFiles": 213,
+      "passed": true
+    },
+    {
+      "operation": "--apply",
+      "expectedExit": 1,
+      "actualExit": 1,
+      "message": "原版资源不匹配"
+    },
+    {
+      "operation": "--restore",
+      "expectedExit": 1,
+      "actualExit": 1,
+      "message": "应用已更新或另有修改"
+    },
+    {
+      "operation": "--restore",
+      "expectedExit": 1,
+      "actualExit": 1,
+      "message": "备份损坏"
+    },
+    {
+      "operation": "--restore",
+      "expectedExit": 0,
+      "actualExit": 0,
+      "message": "完整签名检查通过"
+    },
+    {
+      "operation": "--check",
+      "expectedExit": 0,
+      "actualExit": 0,
+      "message": "检查通过"
+    }
+  ],
+  "version": "2.9.0.0",
+  "patchRevision": 2,
+  "resourceFiles": 213,
+  "nativeSha256": "ee00fded1e4a42afb21bd36de06e306e3f485e8fbd875ef01254f28af6728923",
+  "manifestSha256": "3980c95864200d5e0fb8d29f605061e1eaf809d24324f9c0c04cd9d35a866a2b",
+  "installedResourceReadback": true,
+  "nativeExecutableUnchanged": true,
+  "r1RestoredOfficialSignature": true,
+  "unitTests": {
+    "passed": 34,
+    "failed": 0
+  },
+  "languageReview": {
+    "entries": 18248,
+    "occurrences": 28841,
+    "revisedOrContextual": 1166,
+    "emojiVerifiedAgainstCldr": 4339,
+    "missing": 0,
+    "duplicates": 0,
+    "scopedConflicts": 0,
+    "unresolved": 0,
+    "formatDifferencesReviewed": 27,
+    "ledgerSha256": "88ac1b1f7914d622a12842c395c7d28187d66fe62ed560e1dfcdc1a0d5c44cc0"
+  },
+  "nativeAcceptance": {
+    "checkedAt": "2026-10-24T19:39:00.016934+00:00",
+    "platform": "macOS 26.6.2",
+    "hardware": "Apple M1 Pro",
+    "architecture": "arm64",
+    "passed": true,
+    "checks": [
+      {
+        "name": "冷启动与版本",
+        "result": "最终包正常启动；关于页显示 2.9.0.0，诊断显示所有检查通过。"
+      },
+      {
+        "name": "中英文命令检索",
+        "result": "Restart Frontmost App 与重新启动最前方应用均返回同一个中文命令；未执行重新启动操作。"
+      },
+      {
+        "name": "计算器",
+        "result": "2+3 正确返回 5，未执行复制操作。"
+      },
+      {
+        "name": "原生与扩展设置",
+        "result": "通用设置与 Format JSON 配置正常加载；自动粘贴保持关闭，最大行数仍为 10000。缩进菜单显示制表符、2/4/8 个空格，未改变配置。"
+      },
+      {
+        "name": "实际 JSON 格式化",
+        "result": "按钮显示格式化；按照操作菜单中的查看结果完成预览。hello 字段的世界、count 的 2、enabled 的 true 全部保留，未复制或粘贴结果。"
+      },
+      {
+        "name": "实机发现的错误操作指引",
+        "result": "将不符当前菜单的 Command + Shift + Enter 提示改为从操作菜单选择查看结果，重新构建、安装并实测通过。"
+      }
+    ]
+  },
+  "limitations": [
+    "审校覆盖当前补丁的全部已有中文译文，不等于全部原始英文均已汉化。",
+    "未逐一登录并验收全部 100 个商店扩展和 Mole 的所有流程。",
+    "未验证 Intel Mac 或其他机器启动。",
+    "原生菜单栏、部分动态内容、未识别包装组件及更新说明仍可能为英文。",
+    "资源修改使完整官方签名失效；恢复工具已验证可恢复官方资源和签名，原生可执行文件未改动。"
+  ]
+}

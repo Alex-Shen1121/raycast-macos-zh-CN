@@ -1,0 +1,558 @@
+{
+  "scope": "对结构检查提出的全部格式与受保护字面量差异逐项复核，保留有语义或源码依据的本地化表达。",
+  "reviewed": 27,
+  "unresolved": 0,
+  "decisions": [
+    {
+      "id": "446ddcb455449c15",
+      "fingerprint": "a17f5cf13a7ed87014ca156235712af953c4fcb45c3decbd6920e9b2e02e9401",
+      "differences": [
+        {
+          "category": "number",
+          "changes": [
+            {
+              "value": "6",
+              "before": 0,
+              "after": 1
+            }
+          ]
+        }
+      ],
+      "decision": "已复核保留",
+      "reason": "June 3, 2024 转为 2024 年 6 月 3 日；新增数字 6 对应原文月份 June，日期未改变。"
+    },
+    {
+      "id": "e04e38c245d2a79a",
+      "fingerprint": "00ea6b98a9106932da3dd183a7f12c4d43acd0e2ac292a4b411a8a1c5e1329ce",
+      "differences": [
+        {
+          "category": "inlineCode",
+          "changes": [
+            {
+              "value": "⌘ + Click",
+              "before": 1,
+              "after": 0
+            },
+            {
+              "value": "⌘ + 点击",
+              "before": 0,
+              "after": 1
+            }
+          ]
+        }
+      ],
+      "decision": "已复核保留",
+      "reason": "只将快捷操作说明中的 Click 译为点击，⌘ 和 + 均保留；并非更改命令键或执行代码。"
+    },
+    {
+      "id": "1b723975504cfc2a",
+      "fingerprint": "b9b671506dedc595cecce0d3d7cc1479a8f9b423afdecd1ab9ea48b2b2032547",
+      "differences": [
+        {
+          "category": "inlineCode",
+          "changes": [
+            {
+              "value": "⌘ + Click",
+              "before": 1,
+              "after": 0
+            },
+            {
+              "value": "⌘ + 点击",
+              "before": 0,
+              "after": 1
+            }
+          ]
+        }
+      ],
+      "decision": "已复核保留",
+      "reason": "发布说明整段的差异仍仅为 ⌘ + Click 到 ⌘ + 点击；链接和其余按键文字保持不变。"
+    },
+    {
+      "id": "c72956662f6005b9",
+      "fingerprint": "e9065c6b25ec65f9533b86415c597aaefd52bbb8c25073fb48fb8e4e055d11ec",
+      "differences": [
+        {
+          "category": "domain",
+          "changes": [
+            {
+              "value": "Dictionary.app",
+              "before": 1,
+              "after": 0
+            }
+          ]
+        },
+        {
+          "category": "file",
+          "changes": [
+            {
+              "value": "Dictionary.app",
+              "before": 1,
+              "after": 0
+            }
+          ]
+        }
+      ],
+      "decision": "已复核保留",
+      "reason": "Dictionary.app 在此是应用显示名称，译为词典应用；原文未要求输入文件路径。"
+    },
+    {
+      "id": "7e10156913b1d36a",
+      "fingerprint": "d28998cbe53988990787b7d83754edc78296dd8d070be6e0ea204cdf39aee25f",
+      "differences": [
+        {
+          "category": "number",
+          "changes": [
+            {
+              "value": "00",
+              "before": 0,
+              "after": 2
+            },
+            {
+              "value": "18",
+              "before": 0,
+              "after": 1
+            },
+            {
+              "value": "6",
+              "before": 1,
+              "after": 0
+            }
+          ]
+        }
+      ],
+      "decision": "已复核保留",
+      "reason": "8am–6pm 对应 8:00–18:00，是十二小时到二十四小时制的等价表示。"
+    },
+    {
+      "id": "b69a9ae04b8170b3",
+      "fingerprint": "20704cab43640a68ea67a843db8080e16b63f29c37518ea593736e007e8bae7f",
+      "differences": [
+        {
+          "category": "number",
+          "changes": [
+            {
+              "value": "00",
+              "before": 0,
+              "after": 2
+            }
+          ]
+        }
+      ],
+      "decision": "已复核保留",
+      "reason": "8am–12pm 对应 8:00–12:00，新增 00 表示分钟，时间范围不变。"
+    },
+    {
+      "id": "13ed76853a7a3566",
+      "fingerprint": "1dec9b686987968e30f36d78ae9c59d2026a29a2034a163a4947e51d8a18660f",
+      "differences": [
+        {
+          "category": "number",
+          "changes": [
+            {
+              "value": "00",
+              "before": 0,
+              "after": 2
+            },
+            {
+              "value": "18",
+              "before": 0,
+              "after": 1
+            },
+            {
+              "value": "6",
+              "before": 1,
+              "after": 0
+            }
+          ]
+        }
+      ],
+      "decision": "已复核保留",
+      "reason": "12pm–6pm 对应 12:00–18:00，时间范围不变。"
+    },
+    {
+      "id": "e0bc3c608911b0ca",
+      "fingerprint": "a7684229fd01c3f6fd84eba9ccf3645b0043bcc3516b643fd433be2b0dd7316f",
+      "differences": [
+        {
+          "category": "number",
+          "changes": [
+            {
+              "value": "1",
+              "before": 1,
+              "after": 0
+            }
+          ]
+        }
+      ],
+      "decision": "已复核保留",
+      "reason": "1 week 译为一周，数值使用中文数字表达，方向仍为之后。"
+    },
+    {
+      "id": "a185b03c01746418",
+      "fingerprint": "be52db88ce1016f29a44a771f6bf86bbba7cc91ea095f77858e4b3edf927c7dd",
+      "differences": [
+        {
+          "category": "number",
+          "changes": [
+            {
+              "value": "900",
+              "before": 0,
+              "after": 1
+            }
+          ]
+        }
+      ],
+      "decision": "已复核保留",
+      "reason": "1024x900 到 1024×900 保留两个尺寸；数字扫描对字母 x 与乘号的边界识别不同，900 并非新增。"
+    },
+    {
+      "id": "b15b8c69d842b6fd",
+      "fingerprint": "2021421f40f846b606067834e9783b87239e9a3b6af28754d9448fedbc2a778b",
+      "differences": [
+        {
+          "category": "number",
+          "changes": [
+            {
+              "value": "1",
+              "before": 1,
+              "after": 0
+            }
+          ]
+        }
+      ],
+      "decision": "已复核保留",
+      "reason": "Heading 1 到一级标题保留标题级别，阿拉伯数字转为中文数字。"
+    },
+    {
+      "id": "380b55c71827ce7b",
+      "fingerprint": "98fad8a28ea2cafd00a567de27b63b58b89d9fdf7bf6dbcad89485c4e13fe897",
+      "differences": [
+        {
+          "category": "number",
+          "changes": [
+            {
+              "value": "2",
+              "before": 1,
+              "after": 0
+            }
+          ]
+        }
+      ],
+      "decision": "已复核保留",
+      "reason": "Heading 2 到二级标题保留标题级别，阿拉伯数字转为中文数字。"
+    },
+    {
+      "id": "3caa79b23283a087",
+      "fingerprint": "14b9b23710bbe7ede136ff5cc70923a9ab610575d77eda7989d38ee4466bb5f1",
+      "differences": [
+        {
+          "category": "number",
+          "changes": [
+            {
+              "value": "3",
+              "before": 1,
+              "after": 0
+            }
+          ]
+        }
+      ],
+      "decision": "已复核保留",
+      "reason": "Heading 3 到三级标题保留标题级别，阿拉伯数字转为中文数字。"
+    },
+    {
+      "id": "a6a10edf856b50ed",
+      "fingerprint": "d14dc0be8a3757b77b3b6733824d4697f2c11f9533a1eec701bb28b1409bd6a8",
+      "differences": [
+        {
+          "category": "number",
+          "changes": [
+            {
+              "value": "10",
+              "before": 0,
+              "after": 1
+            },
+            {
+              "value": "10%",
+              "before": 1,
+              "after": 0
+            }
+          ]
+        }
+      ],
+      "decision": "已复核保留",
+      "reason": "审校记录引用 volumeDown.ts 的 volume - 10，目标为降低 10 个百分点；这是有行为依据的单位纠正，仍保留原始差异。"
+    },
+    {
+      "id": "9ff7a609bc735170",
+      "fingerprint": "8838e31ca16f2dc71b257ab1620b85fdd47f6261d046267cbe46c4d170666540",
+      "differences": [
+        {
+          "category": "number",
+          "changes": [
+            {
+              "value": "10",
+              "before": 0,
+              "after": 1
+            },
+            {
+              "value": "10%",
+              "before": 1,
+              "after": 0
+            }
+          ]
+        }
+      ],
+      "decision": "已复核保留",
+      "reason": "审校记录引用 volumeUp.ts 的 volume + 10，目标为提高 10 个百分点；这是有行为依据的单位纠正，仍保留原始差异。"
+    },
+    {
+      "id": "c2aa7282f2a0e851",
+      "fingerprint": "0869510d64e3e49a4689f155571eb3b5bb45fbfd9941721daf56544b414a3cfc",
+      "differences": [
+        {
+          "category": "number",
+          "changes": [
+            {
+              "value": "1",
+              "before": 3,
+              "after": 2
+            }
+          ]
+        }
+      ],
+      "decision": "已复核保留",
+      "reason": "减少一次 1Password 的重复提及；数字 1 属于品牌名，不是项目数量，产品指代仍清楚。"
+    },
+    {
+      "id": "cec54804f395f7de",
+      "fingerprint": "82cf220c20a8c230a2e1eb4b5ee973916ed966ce5b727ab9e437ac9ae5d91e52",
+      "differences": [
+        {
+          "category": "number",
+          "changes": [
+            {
+              "value": "1",
+              "before": 1,
+              "after": 0
+            }
+          ]
+        }
+      ],
+      "decision": "已复核保留",
+      "reason": "1 m interval 译为每分钟，15 s 仍为每 15 秒；缺少字面数字 1 不表示间隔丢失。"
+    },
+    {
+      "id": "1a77fa2eb0df52d4",
+      "fingerprint": "dd595dabee14f217b82df8b60a640cc7c32a4d0d818a66e6f8afeb8ede25d0b8",
+      "differences": [
+        {
+          "category": "number",
+          "changes": [
+            {
+              "value": "2",
+              "before": 1,
+              "after": 0
+            }
+          ]
+        }
+      ],
+      "decision": "已复核保留",
+      "reason": "2FA 译为双重认证，数字 2 属于缩写含义，认证概念未丢失。"
+    },
+    {
+      "id": "38362af3e12d76ef",
+      "fingerprint": "6c125aebd19b9aa033d3728a9cbcb44f8ee8583c991f525425db59929559bdd9",
+      "differences": [
+        {
+          "category": "number",
+          "changes": [
+            {
+              "value": "2",
+              "before": 1,
+              "after": 0
+            }
+          ]
+        }
+      ],
+      "decision": "已复核保留",
+      "reason": "2FA 译为双重认证，数字 2 属于缩写含义，认证概念未丢失。"
+    },
+    {
+      "id": "d03ae952070462ae",
+      "fingerprint": "527562837c4680550d53cccc1c53fa7ff5ad39dc5c373a550eb56bf22ce843c8",
+      "differences": [
+        {
+          "category": "inlineCode",
+          "changes": [
+            {
+              "value": "_",
+              "before": 1,
+              "after": 0
+            },
+            {
+              "value": "__typename",
+              "before": 1,
+              "after": 0
+            }
+          ]
+        }
+      ],
+      "decision": "已复核保留",
+      "reason": "下划线 _ 与 __typename 均仍存在于译文，差异是移除了 Markdown 反引号格式。"
+    },
+    {
+      "id": "b36d2fb6deced138",
+      "fingerprint": "abcdf56b591426da82ffbb28ca1d049ac935c077e3b0c6377398ba238bfd01b2",
+      "differences": [
+        {
+          "category": "inlineCode",
+          "changes": [
+            {
+              "value": "_",
+              "before": 1,
+              "after": 0
+            },
+            {
+              "value": "type_",
+              "before": 1,
+              "after": 0
+            }
+          ]
+        }
+      ],
+      "decision": "已复核保留",
+      "reason": "下划线 _ 与 type_ 均仍存在于译文，差异是移除了 Markdown 反引号格式。"
+    },
+    {
+      "id": "ec8b012c134e7320",
+      "fingerprint": "d48aedf0a0bd9b41565e8a1cef813ea07df141c7a26ac1e137d66f8f0aa3a67c",
+      "differences": [
+        {
+          "category": "inlineCode",
+          "changes": [
+            {
+              "value": "Copy Text",
+              "before": 1,
+              "after": 0
+            },
+            {
+              "value": "Open in Eudic",
+              "before": 1,
+              "after": 0
+            }
+          ]
+        }
+      ],
+      "decision": "已复核保留",
+      "reason": "反引号内是两个操作按钮名称，分别译为在 Eudic 中打开和复制文本；不是需要执行的代码。启用且已安装的条件仍完整。"
+    },
+    {
+      "id": "780dff8ec5432977",
+      "fingerprint": "4dcc5071988045e5f508828d976aa93fbfe10e398d26de7b5931ad2efcba442d",
+      "differences": [
+        {
+          "category": "inlineCode",
+          "changes": [
+            {
+              "value": "English",
+              "before": 1,
+              "after": 0
+            }
+          ]
+        }
+      ],
+      "decision": "已复核保留",
+      "reason": "反引号内 English 是自然语言名称，目标为英语，单词含义未丢失。"
+    },
+    {
+      "id": "6260cf0e218baf64",
+      "fingerprint": "04040ddf699f5d4dee6e7f306949a349cc5aeb2027f5003307611dbf78108a24",
+      "differences": [
+        {
+          "category": "inlineCode",
+          "changes": [
+            {
+              "value": "Apple Translate",
+              "before": 1,
+              "after": 0
+            }
+          ]
+        }
+      ],
+      "decision": "已复核保留",
+      "reason": "Apple Translate 快捷指令名称仍逐字保留，只去掉了反引号格式；macOS 限制及安装前提仍在。"
+    },
+    {
+      "id": "bc0345596ac9402f",
+      "fingerprint": "92872e349418eda645785c52d90a4b7abbbe4627608b3b43af4f8b25354c0e78",
+      "differences": [
+        {
+          "category": "number",
+          "changes": [
+            {
+              "value": "2",
+              "before": 1,
+              "after": 0
+            }
+          ]
+        }
+      ],
+      "decision": "已复核保留",
+      "reason": "2FA 译为双重认证验证码，数字 2 的认证含义由中文表达。"
+    },
+    {
+      "id": "0195f18411e079f4",
+      "fingerprint": "2f2cc5d93b4de52ab84908ba1c3cbda2791121aeac15db68def41a5da6addcde",
+      "differences": [
+        {
+          "category": "number",
+          "changes": [
+            {
+              "value": "2",
+              "before": 1,
+              "after": 0
+            }
+          ]
+        }
+      ],
+      "decision": "已复核保留",
+      "reason": "该扩展的 2FA 搜索字段简称验证码搜索时间单位；没有把数字 2 当作查询数量，具体范围解释依赖产品语境。"
+    },
+    {
+      "id": "db4e408102bd6949",
+      "fingerprint": "5b6d6272d6a7bad9703fe9f35f3994b430ce114b72c9016e0841e35a0a754475",
+      "differences": [
+        {
+          "category": "number",
+          "changes": [
+            {
+              "value": "2",
+              "before": 1,
+              "after": 0
+            }
+          ]
+        }
+      ],
+      "decision": "已复核保留",
+      "reason": "该扩展的 2FA 搜索字段简称验证码搜索时间范围；数字 2 不是搜索次数，具体字段含义依赖产品语境。"
+    },
+    {
+      "id": "8cc6468e9c7f8337",
+      "fingerprint": "8c3fd3e294786e7ac56cb759f265e210f077e7f9a948e1c9f24081061c2f779c",
+      "differences": [
+        {
+          "category": "file",
+          "changes": [
+            {
+              "value": "Node.js",
+              "before": 0,
+              "after": 1
+            }
+          ]
+        }
+      ],
+      "decision": "已复核保留",
+      "reason": "node 到 Node.js 是已声明的显示表达式替换；Node.js 被文件名正则捕获，实际审校依据指向运行时显示名称；仅改变显示表达式，不改程序枚举。"
+    }
+  ]
+}

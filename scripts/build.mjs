@@ -67,6 +67,7 @@ export function build(app, destination) {
   fs.writeFileSync(path.join(destination, 'native-sha256.txt'), spec.nativeSha256 + '\n');
   const info = {
     version: spec.version,
+    patchRevision: spec.patchRevision,
     architecture: spec.architecture,
     resourceFiles: prepared.length,
     replacements: prepared.reduce((sum, file) => sum + file.edits.length, 0),
@@ -77,7 +78,8 @@ export function build(app, destination) {
     sourceScopeDate: '2026-09-21',
     storePlugins: 100,
     retainedOutsideScope: ['Mole'],
-    machineDraftsIncluded: false
+    machineDraftsIncluded: false,
+    languageReviewReport: '翻译审校报告.md'
   };
   fs.writeFileSync(path.join(destination, '包信息.json'), JSON.stringify(info, null, 2) + '\n');
   for (const name of ['patch.sh', '安装汉化.command', '恢复原版.command']) fs.chmodSync(path.join(destination, name), 0o755);
